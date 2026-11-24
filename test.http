@@ -1,0 +1,24 @@
+### 1. Создание товара
+POST http://localhost:3001/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbXd0ZWs3MXEwMDAwdTA2OG5vNmJoaDB3Iiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3OTU0NDY2MjAsImV4cCI6MTc5NjA1MTQyMH0.fb8YuPuArlp9d3eq1e0VA3VA0CgBrQvW0HzhFw6p0lc
+
+{
+  "name": "Стрейч-плёнка",
+  "category": "Упаковка",
+  "price": 500,
+  "quantity": 10,
+  "description": "Прочная плёнка для паллет"
+}
+
+### 2. Получить список товаров
+GET http://localhost:3001/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbXd0ZWs3MXEwMDAwdTA2OG5vNmJoaDB3Iiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3OTU0NDY2MjAsImV4cCI6MTc5NjA1MTQyMH0.fb8YuPuArlp9d3eq1e0VA3VA0CgBrQvW0HzhFw6p0lc
+
+### 3. Поиск товаров
+GET http://localhost:3001/api/products?search=плёнка
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbXd0ZWs3MXEwMDAwdTA2OG5vNmJoaDB3Iiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3OTU0NDY2MjAsImV4cCI6MTc5NjA1MTQyMH0.fb8YuPuArlp9d3eq1e0VA3VA0CgBrQvW0HzhFw6p0lc
+
+### 4. Сортировка по цене (по возрастанию)
+GET http://localhost:3001/api/products?sortBy=price
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbXd0ZWs3MXEwMDAwdTA2OG5vNmJoaDB3Iiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3OTU0NDY2MjAsImV4cCI6MTc5NjA1MTQyMH0.fb8YuPuArlp9d3eq1e0VA3VA0CgBrQvW0HzhFw6p0lc
